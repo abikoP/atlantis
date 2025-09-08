@@ -1,0 +1,13 @@
+# 環境固有の設定ファイル例
+environment = "dev"
+project_name = "atlantis"
+aws_region = "ap-northeast-1"
+
+# Atlantis設定
+atlantis_repo_allowlist = [
+  "github.com/platetech/terraform-iam-s3-project"
+]
+
+# インフラ設定
+enable_nat_gateway = true
+enable_vpn_gateway = false
