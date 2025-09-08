@@ -9,5 +9,5 @@ atlantis_repo_allowlist = [
 ]
 
 # インフラ設定
-enable_nat_gateway = true
+enable_nat_gateway = false  # Atlantisがパブリックサブネット使用のため不要（月約$45節約）
 enable_vpn_gateway = false

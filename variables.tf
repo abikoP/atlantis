@@ -23,9 +23,9 @@ variable "atlantis_repo_allowlist" {
 }
 
 variable "enable_nat_gateway" {
-  description = "NAT Gatewayを有効にするかどうか"
+  description = "NAT Gatewayを有効にするかどうか（Atlantisがパブリックサブネット使用のため通常は不要）"
   type        = bool
-  default     = true
+  default     = false  # コスト削減のためデフォルト無効
 }
 
 variable "enable_vpn_gateway" {
