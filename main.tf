@@ -10,6 +10,8 @@ terraform {
 
 provider "aws" {
   region = var.aws_region
+  # AWS_PROFILE環境変数から自動的に取得されます
+  # export AWS_PROFILE=your-profile-name
 
   default_tags {
     tags = local.common_tags

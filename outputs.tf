@@ -25,10 +25,10 @@ output "atlantis_url" {
   value       = module.atlantis.url
 }
 
-output "atlantis_security_group_id" {
-  description = "AtlantisのセキュリティグループID"
-  value       = module.atlantis.ecs_security_group_id
-}
+# output "atlantis_security_group_id" {
+#   description = "AtlantisのセキュリティグループID"
+#   value       = module.atlantis.ecs_security_group_id
+# }
 
 # Route53の出力
 output "route53_zone_id" {
@@ -39,4 +39,5 @@ output "route53_zone_id" {
 output "domain_name" {
   description = "ドメイン名"
   value       = local.domain
+  sensitive   = true
 }
